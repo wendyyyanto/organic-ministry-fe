@@ -1,21 +1,57 @@
+@import url("https://api.fontshare.com/v2/css?f[]=melodrama@300,400,500,600,700&f[]=nunito@200,300,400,500,600&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+	color: theme("colors.primary");
+	background: theme("colors.white");
+	overflow-x: hidden;
+}
+
+html {
+	scrollbar-width: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+*:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+input {
+	outline: none !important;
+}
+
+.Custom-SideBar-Item {
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+
+.Custom-SideBar-Item:hover {
+	cursor: pointer;
+}
+
+.Custom-SideBar-Item::after {
+	content: "";
+	background: theme("colors.secondary");
+	width: 0;
+	height: 1px;
+	transition: all 0.15s ease-in-out;
+}
+
+.Custom-SideBar-Item:hover::after {
+	width: 100%;
+}
+
+.swiper-pagination-bullet-active {
+	background: theme("colors.secondary") !important;
 }

@@ -11,7 +11,7 @@ const UnderConstruction = () => {
 	const isSidebarOpened = useSidebarStore((state) => state.isSidebarOpened);
 
 	return (
-		<div className="bg-slate-950 w-screen h-screen flex flex-col justify-center items-center font-melo">
+		<div className="bg-slate-950 w-screen h-screen flex flex-col justify-center items-center">
 			<div className="absolute top-1/4">
 				<h1 className="text-7xl font-medium ">
 					UNDER-GOING CONSTRUCTION

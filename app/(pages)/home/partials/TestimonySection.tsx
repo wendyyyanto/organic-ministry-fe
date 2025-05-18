@@ -6,17 +6,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 function TestimonySection() {
 	return (
-		<div className="w-full flex justify-center font-melo">
+		<div className="w-full flex justify-center">
 			<div className="w-[750px] flex flex-col gap-8">
 				<div className="flex flex-col gap-5">
 					<h1 className="text-7xl text-center font-semibold">
-						MOMENT <br /> WITH GOD
+						THEIR TESTIMONIES
 					</h1>
 					<p className="text-center font-sans text-xl font-light leading-tight">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-						sed do eiusmod tempor incididunt ut labore et dolore
-						magna aliqua. Ut enim ad minim veniam, quis nostrud
-						exercitation ullamco laboris nisi
+						We are a community of believers who have experienced the
+						love and grace of God in our lives. Here are some of the
+						testimonies from our members, sharing their personal
+						experiences and how God has transformed their lives.
 					</p>
 				</div>
 				<Swiper
@@ -32,14 +32,14 @@ function TestimonySection() {
 				>
 					{dummyTestimony.map((testimony) => (
 						<SwiperSlide
-							className="flex flex-col h-full justify-center items-center gap-4 px-5 py-6 bg-primary text-secondary font-sans"
+							className="flex flex-col h-full justify-center items-center px-5 py-6 bg-primary text-secondary font-sans"
 							key={testimony.id}
 						>
-							<p className="text-xl max-w-full w-full line-clamp-3 max-h-24 font-light overflow-hidden text-ellipsis text-center leading-6">
+							<p className="text-xl max-w-full w-full line-clamp-3 max-h-24 mb-6 font-light overflow-hidden text-ellipsis text-center leading-6">
 								&ldquo;{testimony.testimony}&rdquo;
 							</p>
 							<div className="flex flex-col text-center">
-								<p className="font-bold font-melo text-xl">
+								<p className="font-bold text-xl">
 									{testimony.writer}
 								</p>
 								<p className="font-normal text-lg">

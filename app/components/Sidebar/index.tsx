@@ -12,6 +12,7 @@ function Sidebar() {
 		{ title: "Home", link: "/" },
 		{ title: "Activities", link: "/activities" },
 		{ title: "Gallery", link: "/under-construction" },
+		{ title: "Teachings", link: "/teachings" },
 		{ title: "About Us", link: "/about" }
 	];
 

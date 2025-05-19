@@ -35,7 +35,7 @@ function ScheduleSection() {
 				</div>
 				<div className="flex justify-center items-center mt-10">
 					<Link
-						href="/schedules"
+						href="/activities"
 						className="flex justify-center items-center px-5 py-5 bg-primary text-secondary w-1/2 cursor-pointer"
 						onClick={() => {}}
 					>

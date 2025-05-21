@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import NavbarLayout from "./components/NavbarLayout";
 import "./globals.css";
+import ClientLayout from "./components/ClientLayout";
 
 export const metadata: Metadata = {
 	title: "Organic Ministry",
@@ -29,7 +30,9 @@ export default function RootLayout({
 			className={`${meloFont.variable} ${clashFont.variable}`}
 		>
 			<body>
-				<NavbarLayout>{children}</NavbarLayout>
+				<ClientLayout>
+					<NavbarLayout>{children}</NavbarLayout>
+				</ClientLayout>
 			</body>
 		</html>
 	);

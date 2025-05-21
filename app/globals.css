@@ -15,6 +15,10 @@ p {
 	@apply font-clash;
 }
 
+h1 {
+	@apply select-none;
+}
+
 * {
 	margin: 0;
 	padding: 0;

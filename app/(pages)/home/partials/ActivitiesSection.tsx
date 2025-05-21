@@ -4,11 +4,11 @@ import Divider from "@/app/components/Divider";
 import { Fragment } from "react";
 import Link from "next/link";
 
-function ScheduleSection() {
+function ActivitiesSection() {
 	return (
 		<div className="flex gap-28 px-12">
-			<h1 className="text-primary text-7xl w-80 font-semibold">
-				UPCOMING EVENTS
+			<h1 className="text-primary text-7xl w-80 font-semibold uppercase">
+				Upcoming Activities
 			</h1>
 			<div className="pt-32 w-full">
 				<div className="flex flex-col gap-10">
@@ -40,7 +40,7 @@ function ScheduleSection() {
 						onClick={() => {}}
 					>
 						<h3 className="uppercase text-3xl font-bold tracking-wider">
-							all activities
+							see all activities
 						</h3>
 					</Link>
 				</div>
@@ -49,4 +49,4 @@ function ScheduleSection() {
 	);
 }
 
-export default ScheduleSection;
+export default ActivitiesSection;

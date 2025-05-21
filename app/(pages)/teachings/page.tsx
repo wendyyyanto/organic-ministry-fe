@@ -1,12 +1,14 @@
-import { teachingVideos } from "@/app/data/teachingVideos";
+import { teachingRecordings } from "@/app/data/teachingRecordings";
 
 const TeachingsPage = () => {
-	const teachings = teachingVideos;
+	const teachings = teachingRecordings;
 
 	return (
-		<div className="w-full h-full flex flex-col py-48 px-12">
-			<h1 className="text-6xl font-bold">Teachings</h1>
-			<div className="flex gap-10 mt-14 bg-primary"></div>
+		<div className="w-screen h-screen flex flex-col items-center justify-center pt-36 pb-12 px-12">
+			<h1 className="absolute top-32 text-6xl font-bold uppercase text-center w-min">
+				Teaching Recordings
+			</h1>
+			<div className="flex gap-10 mt-16 w-full h-full bg-secondary"></div>
 		</div>
 	);
 };

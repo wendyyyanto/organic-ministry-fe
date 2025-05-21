@@ -1,14 +1,9 @@
 "use client";
 
 import React from "react";
-import Sidebar from "@/app/components/Sidebar";
-import { useSidebarStore } from "@/app/store/SidebarStore";
-import { AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
 function About() {
-	const isSidebarOpened = useSidebarStore((state) => state.isSidebarOpened);
-
 	return (
 		<div className="flex flex-col w-screen h-screen gap-5 px-12 pb-12 pt-40">
 			<div className="w-full h-full overflow-hidden">
@@ -34,8 +29,6 @@ function About() {
 				</p>
 				<p className="text-8xl font-bold">Organic Ministry</p>
 			</div>
-
-			<AnimatePresence>{isSidebarOpened && <Sidebar />}</AnimatePresence>
 		</div>
 	);
 }

@@ -1,6 +1,7 @@
 import { teachingRecordings } from "@/app/data/teachingRecordings";
 
 const TeachingsPage = () => {
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	const teachings = teachingRecordings;
 
 	return (

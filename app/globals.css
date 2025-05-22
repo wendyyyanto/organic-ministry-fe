@@ -1,17 +1,22 @@
-@import url("https://api.fontshare.com/v2/css?f[]=melodrama@300,400,500,600,700&f[]=nunito@200,300,400,500,600&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-	color: theme("colors.primary");
-	background: theme("colors.white");
+	@apply text-primary bg-white font-melodrama;
 	overflow-x: hidden;
 }
 
 html {
 	scrollbar-width: none;
+}
+
+p {
+	@apply font-clash;
+}
+
+h1 {
+	@apply select-none;
 }
 
 * {
@@ -41,8 +46,8 @@ input {
 }
 
 .Custom-SideBar-Item::after {
+	@apply bg-secondary;
 	content: "";
-	background: theme("colors.secondary");
 	width: 0;
 	height: 1px;
 	transition: all 0.15s ease-in-out;
@@ -53,5 +58,5 @@ input {
 }
 
 .swiper-pagination-bullet-active {
-	background: theme("colors.secondary") !important;
+	@apply bg-secondary !important	;
 }

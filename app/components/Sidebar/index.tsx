@@ -10,15 +10,15 @@ function Sidebar() {
 
 	const sideBarItems = [
 		{ title: "Home", link: "/" },
-		{ title: "Activities", link: "/under-construction" },
-		{ title: "Teachers", link: "/teachers" },
+		{ title: "Activities", link: "/activities" },
 		{ title: "Gallery", link: "/under-construction" },
+		{ title: "Teachings", link: "/teachings" },
 		{ title: "About Us", link: "/about" }
 	];
 
 	return (
 		<motion.div
-			className="flex flex-col gap-28 w-screen h-screen fixed bg-primary top-0 left-0 py-7 px-12 font-melo"
+			className="flex flex-col justify-center items-center gap-28  z-50 w-screen h-screen fixed bg-primary top-0 left-0 py-7 px-12"
 			initial={{
 				opacity: 0
 			}}
@@ -26,15 +26,17 @@ function Sidebar() {
 				opacity: 1
 			}}
 			transition={{
-				duration: 0.1,
-				delay: 0.25
+				duration: 0.1
 			}}
 			exit={{
 				opacity: 0
 			}}
 		>
-			<div className="flex justify-end text-secondary text-3xl font-bold">
-				<p className="cursor-pointer" onClick={toggleSidebar}>
+			<div className="flex justify-end absolute top-10 right-10 text-secondary text-3xl font-bold">
+				<p
+					className="cursor-pointer font-melodrama"
+					onClick={toggleSidebar}
+				>
 					Close
 				</p>
 			</div>

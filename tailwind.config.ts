@@ -1,4 +1,3 @@
-import defaultTheme from "tailwindcss/defaultTheme";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -10,8 +9,8 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ["Nunito", ...defaultTheme.fontFamily.sans],
-				melo: ["Melodrama", ...defaultTheme.fontFamily.serif]
+				clash: ["var(--font-clash)"],
+				melodrama: ["var(--font-melodrama)"]
 			},
 			colors: {
 				primary: "#178E96",

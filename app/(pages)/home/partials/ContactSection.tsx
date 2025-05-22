@@ -2,7 +2,7 @@ import Divider from "@/app/components/Divider";
 
 function ContactSection() {
 	return (
-		<div className="w-full px-16 flex flex-col gap-16 font-melo">
+		<div className="w-full px-16 flex flex-col gap-16">
 			<Divider />
 
 			<div className="w-full h-[500px] flex items-center">

@@ -1,18 +1,48 @@
 "use client";
 
-import React, { Fragment } from "react";
+import React from "react";
 
 import OrganicMinistryLogo from "@/public/assets/images/om-icon.png";
 import { useSidebarStore } from "@/app/store/SidebarStore";
 import Link from "next/link";
 import Image from "next/image";
+import clsx from "clsx";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap";
+import { useRef } from "react";
 
 const NavbarLayout = ({ children }: { children: React.ReactNode }) => {
-	const toggleSidebar = useSidebarStore((state) => state.handleToggleSidebar);
+	gsap.registerPlugin(useGSAP);
+	gsap.registerPlugin(ScrollTrigger);
+
+	const container = useRef(null);
+
+	useGSAP(
+		() => {
+			gsap.to(".navbar-background", {
+				scrollTrigger: {
+					trigger: ".trigger-background",
+					toggleActions: "play none none reverse",
+					start: "top top"
+				},
+				backgroundColor: "#ffffff"
+			});
+		},
+		{ scope: container }
+	);
+
+	const { handleToggleSidebar: toggleSidebar, isSidebarOpened } =
+		useSidebarStore((state) => state);
+
+	const sidebarClass = clsx(
+		"fixed top-0 left-0 right-0 px-12 w-screen flex justify-between items-center font-bold navbar-background",
+		{ "z-50": !isSidebarOpened }
+	);
 
 	return (
-		<Fragment>
-			<div className="absolute px-12 w-screen left-0 flex justify-between items-center font-melo font-bold">
+		<div ref={container}>
+			<div className={sidebarClass}>
 				<Link href="/">
 					<Image
 						alt="Organic Ministry Logo"
@@ -21,13 +51,13 @@ const NavbarLayout = ({ children }: { children: React.ReactNode }) => {
 						height={100}
 					/>
 				</Link>
-				<p className="text-5xl cursor-pointer" onClick={toggleSidebar}>
+				<h1 className="text-5xl cursor-pointer" onClick={toggleSidebar}>
 					MENU
-				</p>
+				</h1>
 			</div>
 
 			{children}
-		</Fragment>
+		</div>
 	);
 };
 

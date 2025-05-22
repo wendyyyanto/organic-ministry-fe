@@ -1,6 +1,6 @@
 function HeroSection() {
 	return (
-		<div className="w-screen h-screen font-melo flex items-center justify-start">
+		<div className="w-screen h-screen px-12 flex items-center justify-start trigger-background">
 			<video
 				className="h-screen w-screen absolute top-0 left-0 -z-20 object-cover"
 				autoPlay

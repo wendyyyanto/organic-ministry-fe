@@ -6,7 +6,7 @@ const TeachingsPage = () => {
 	const teachings = teachingRecordings;
 
 	return (
-		<div className="pb-20 px-12">
+		<div className="pb-20 px-12 trigger-background">
 			<div className="w-full h-screen flex flex-col items-center justify-center pt-36 pb-12 trigger-background">
 				<h1 className="absolute top-32 text-8xl z-50 font-bold uppercase text-center w-min">
 					Teaching Recordings
@@ -22,7 +22,7 @@ const TeachingsPage = () => {
 					</video>
 				</div>
 			</div>
-			<div className="mt-40 flex gap-40 w-full h-full">
+			<div className="mt-40 flex gap-40 w-full h-full ">
 				<h1 className="font-bold text-6xl">Directories</h1>
 				<div className="grid grid-cols-4 gap-10 flex-1">
 					{teachings.map((teaching) => (

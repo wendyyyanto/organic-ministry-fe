@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 function HeroSection() {
 	return (
 		<div className="w-screen h-screen px-12 flex items-center justify-start trigger-background">
@@ -23,9 +25,12 @@ function HeroSection() {
 						perspiciatis quis dolor illum sequi molestiae,
 						aspernatur harum, tenetur numquam quaerat.
 					</p>
-					<div className="w-fit flex justify-center items-center font-bold text-2xl text-primary bg-secondary py-4 px-16 gap-11 cursor-pointer">
+					<Link
+						href="/under-construction"
+						className="w-fit flex justify-center items-center font-bold text-2xl text-primary bg-secondary py-4 px-16 gap-11 cursor-pointer"
+					>
 						OUR SCHEDULES
-					</div>
+					</Link>
 				</div>
 			</div>
 		</div>

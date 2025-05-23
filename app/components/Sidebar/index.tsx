@@ -10,9 +10,9 @@ function Sidebar() {
 
 	const sideBarItems = [
 		{ title: "Home", link: "/" },
-		{ title: "Activities", link: "/activities" },
-		{ title: "Gallery", link: "/under-construction" },
 		{ title: "Teachings", link: "/teachings" },
+		{ title: "Activities", link: "/under-construction" },
+		{ title: "Gallery", link: "/under-construction" },
 		{ title: "About Us", link: "/about" }
 	];
 

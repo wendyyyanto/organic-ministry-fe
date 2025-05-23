@@ -35,7 +35,7 @@ function ActivitiesSection() {
 				</div>
 				<div className="flex justify-center items-center mt-10">
 					<Link
-						href="/activities"
+						href="/under-construction"
 						className="flex justify-center items-center px-5 py-5 bg-primary text-secondary w-1/2 cursor-pointer"
 						onClick={() => {}}
 					>

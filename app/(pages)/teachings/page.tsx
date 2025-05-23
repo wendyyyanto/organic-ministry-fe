@@ -1,4 +1,5 @@
 import { teachingRecordings } from "@/app/data/teachingRecordings";
+import TeachingFolder from "./components/TeachingFolder";
 
 const TeachingsPage = () => {
 	// eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -21,18 +22,12 @@ const TeachingsPage = () => {
 					</video>
 				</div>
 			</div>
-			<div className="mt-40 flex gap-10 w-full h-full">
+			<div className="mt-40 flex gap-40 w-full h-full">
 				<h1 className="font-bold text-6xl">Directories</h1>
 				<div className="grid grid-cols-4 gap-10 flex-1">
-					<div className="h-[170px] w-full bg-primary"></div>
-					<div className="h-[170px] w-full bg-primary"></div>
-					<div className="h-[170px] w-full bg-primary"></div>
-					<div className="h-[170px] w-full bg-primary"></div>
-					<div className="h-[170px] w-full bg-primary"></div>
-					<div className="h-[170px] w-full bg-primary"></div>
-					<div className="h-[170px] w-full bg-primary"></div>
-					<div className="h-[170px] w-full bg-primary"></div>
-					<div className="h-[170px] w-full bg-primary"></div>
+					{teachings.map((teaching) => (
+						<TeachingFolder teaching={teaching} key={teaching.id} />
+					))}
 				</div>
 			</div>
 		</div>

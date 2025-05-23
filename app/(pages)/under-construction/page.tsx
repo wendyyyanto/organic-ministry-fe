@@ -11,8 +11,7 @@ const UnderConstruction = () => {
 					UNDER-GOING CONSTRUCTION
 				</h1>
 				<p className="text-xl text-center font-sans">
-					We&apos;re working on this page so it can be finished as
-					soon as possible.
+					We&apos;re working on this page. Please check it out later.
 				</p>
 			</div>
 			<Image

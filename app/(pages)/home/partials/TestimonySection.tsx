@@ -5,6 +5,8 @@ import { dummyTestimony } from "@/app/data/dummyTestimony";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 function TestimonySection() {
+	const testimonies = dummyTestimony;
+
 	return (
 		<div className="w-full flex justify-center">
 			<div className="w-[750px] flex flex-col gap-8">
@@ -30,7 +32,7 @@ function TestimonySection() {
 					modules={[Pagination]}
 					className="h-52 w-full"
 				>
-					{dummyTestimony.map((testimony) => (
+					{testimonies.map((testimony) => (
 						<SwiperSlide
 							className="flex flex-col h-full justify-center items-center px-5 py-6 bg-primary text-secondary font-sans"
 							key={testimony.id}
@@ -39,11 +41,8 @@ function TestimonySection() {
 								&ldquo;{testimony.testimony}&rdquo;
 							</p>
 							<div className="flex flex-col text-center">
-								<p className="font-bold text-xl">
+								<p className="font-semibold text-xl">
 									{testimony.writer}
-								</p>
-								<p className="font-normal text-lg">
-									{testimony.verse}
 								</p>
 							</div>
 						</SwiperSlide>

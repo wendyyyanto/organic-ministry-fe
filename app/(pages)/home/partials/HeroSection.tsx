@@ -19,11 +19,15 @@ function HeroSection() {
 				</h1>
 				<div className="flex flex-col gap-10 text-secondary">
 					<p className="font-sans font-light text-xl leading-tight">
-						Lorem, ipsum dolor sit amet consectetur adipisicing
-						elit. Excepturi veritatis iure eaque ratione aspernatur
-						perspiciatis dolorum? Eligendi adipisci fugiat
-						perspiciatis quis dolor illum sequi molestiae,
-						aspernatur harum, tenetur numquam quaerat.
+						Welcome to Organic Ministry — a non-traditional,
+						non-denominational house church where evangelism and
+						discipleship happen through authentic, loving community.
+						Rooted in the Great Commission and the call to love one
+						another, we exist to help young people grow in faith,
+						live out their calling, and build meaningful
+						relationships centered on Christ. Whether you&apos;re
+						exploring faith or seeking deeper discipleship, you are
+						welcome here.
 					</p>
 					<Link
 						href="/under-construction"

@@ -1,32 +1,29 @@
 export const dummyTestimony = [
-    {
-        id: 1,
-        writer: "Wendyanto",
-        testimony: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
-        verse: "Romans 10:9-10",
-    },
-    {
-        id: 2,
-        writer: "Wendyanto",
-        testimony: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
-        verse: "John 3:16",
-    },
-    {
-        id: 3,
-        writer: "Wendyanto",
-        testimony: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
-        verse: "Proverbs 3:5-6",
-    },
-    {
-        id: 4,
-        writer: "Wendyanto",
-        testimony: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
-        verse: "John 14:6",
-    },
-    {
-        id: 5,
-        writer: "Wendyanto",
-        testimony: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hac habitasse platea dictumst. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
-        verse: "John 15:7",
-    },
-]
+	{
+		id: 1,
+		writer: "Anonim",
+		testimony:
+			"Dulu nolak ikut, tapi sekarang ngikut terus tanpa perlu disuruh."
+	},
+	{
+		id: 2,
+		writer: "Anonim",
+		testimony:
+			"Awalnya ikut supaya bisa dapat pasangan, tapi malah dapat kasih karunia Tuhan."
+	},
+	{
+		id: 3,
+		writer: "Seorang Dosen dan Profesor",
+		testimony: "Dulu gatau diri, sekarang jadi living testimony"
+	},
+	{
+		id: 4,
+		writer: "Choipok",
+		testimony: "Dulu cuman ikut-ikutan, sekarang malah keterusan"
+	},
+	{
+		id: 5,
+		writer: "Anak Oom Yanto",
+		testimony: "Dulu ikut karna kesepian, sekarang jadi keramean."
+	}
+];

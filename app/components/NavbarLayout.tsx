@@ -47,11 +47,15 @@ const NavbarLayout = ({ children }: { children: React.ReactNode }) => {
 					<Image
 						alt="Organic Ministry Logo"
 						src={OrganicMinistryLogo}
+						className="cursor-pointer max-lg:w-40"
 						width={200}
 						height={100}
 					/>
 				</Link>
-				<h1 className="text-5xl cursor-pointer" onClick={toggleSidebar}>
+				<h1
+					className="text-5xl max-lg:text-4xl cursor-pointer"
+					onClick={toggleSidebar}
+				>
 					MENU
 				</h1>
 			</div>

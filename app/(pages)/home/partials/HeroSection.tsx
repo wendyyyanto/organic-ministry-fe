@@ -14,11 +14,11 @@ function HeroSection() {
 			<div className="bg-black h-screen w-screen absolute top-0 left-0 -z-10 opacity-75"></div>
 
 			<div className="flex flex-col gap-5 max-w-2xl">
-				<h1 className="text-[174px] max-2xl:text-9xl max-w-3xl font-bold leading-[162px] max-2xl:leading-32 text-secondary">
+				<h1 className="text-[174px] max-lg:w-min max-lg:leading-20	 max-lg:text-7xl max-2xl:text-9xl max-w-3xl font-bold leading-[162px] max-2xl:leading-32 text-secondary">
 					ORGANIC MINISTRY.
 				</h1>
 				<div className="flex flex-col gap-10 text-secondary">
-					<p className="font-sans font-light text-xl leading-tight">
+					<p className="font-sans max-lg:text-lg font-light text-xl leading-tight">
 						Welcome to Organic Ministry — a non-traditional,
 						non-denominational house church where evangelism and
 						discipleship happen through authentic, loving community.
@@ -31,7 +31,7 @@ function HeroSection() {
 					</p>
 					<Link
 						href="/under-construction"
-						className="w-fit flex justify-center items-center font-bold text-3xl text-primary bg-secondary py-4 px-16 gap-11 cursor-pointer tracking-wider"
+						className="w-fit flex justify-center items-center font-bold text-3xl max-lg:text-2xl max-lg:px-10 text-primary bg-secondary py-4 px-16 gap-11 cursor-pointer tracking-wider"
 					>
 						OUR ACTIVITIES
 					</Link>

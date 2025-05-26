@@ -4,7 +4,7 @@ import React from "react";
 
 function About() {
 	return (
-		<div className="flex flex-col justify-center w-screen h-screen overflow-hidden">
+		<div className="flex flex-col justify-center w-screen h-screen">
 			<h1 className="text-8xl font-bold text-center">
 				About Organic Ministry.
 			</h1>

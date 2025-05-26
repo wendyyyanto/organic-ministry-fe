@@ -11,10 +11,10 @@ function TestimonySection() {
 		<div className="w-full flex justify-center">
 			<div className="w-[750px] flex flex-col gap-8">
 				<div className="flex flex-col gap-5">
-					<h1 className="text-7xl text-center font-semibold">
+					<h1 className="text-7xl max-xl:text-5xl text-center font-semibold">
 						THEIR TESTIMONIES
 					</h1>
-					<p className="text-center font-sans text-xl font-light leading-tight">
+					<p className="text-center font-sans max-xl:px-24 max-xl:text-lg text-xl font-light leading-tight">
 						We are a community of believers who have experienced the
 						love and grace of God in our lives. Here are some of the
 						testimonies from our members, sharing their personal
@@ -30,7 +30,7 @@ function TestimonySection() {
 						clickable: true
 					}}
 					modules={[Pagination]}
-					className="h-52 w-full"
+					className="h-52 w-full max-xl:w-3/4"
 				>
 					{testimonies.map((testimony) => (
 						<SwiperSlide

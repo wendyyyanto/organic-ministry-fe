@@ -47,7 +47,7 @@ function Sidebar() {
 				{sideBarItems.map((item, index) => (
 					<motion.div
 						initial={{ opacity: 0 }}
-						className="flex flex-col justify-center items-center w-full text-secondary text-6xl max-lg:text-5xl max-md:text-4xl font-bold sidebar-item"
+						className="flex flex-col w-fit justify-center items-center text-secondary text-6xl max-lg:text-5xl max-md:text-4xl font-bold sidebar-item"
 						key={index}
 					>
 						<Link href={item.link} onClick={toggleSidebar}>

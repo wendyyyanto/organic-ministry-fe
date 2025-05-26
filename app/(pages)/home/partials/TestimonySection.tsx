@@ -34,16 +34,18 @@ function TestimonySection() {
 				>
 					{testimonies.map((testimony) => (
 						<SwiperSlide
-							className="flex flex-col h-full justify-center items-center px-5 py-6 bg-primary text-secondary font-sans"
+							className="bg-primary text-secondary font-sans px-12 py-8"
 							key={testimony.id}
 						>
-							<p className="text-xl max-w-full w-full line-clamp-3 max-h-24 mb-6 font-light overflow-hidden text-ellipsis text-center leading-6">
-								&ldquo;{testimony.testimony}&rdquo;
-							</p>
-							<div className="flex flex-col text-center">
-								<p className="font-semibold text-xl">
-									{testimony.writer}
+							<div className="flex flex-col justify-center items-center h-full">
+								<p className="text-xl max-w-full w-full line-clamp-3 max-h-24 mb-6 font-light overflow-hidden text-ellipsis text-center leading-6">
+									&ldquo;{testimony.testimony}&rdquo;
 								</p>
+								<div className="flex flex-col text-center">
+									<p className="font-semibold text-xl">
+										{testimony.writer}
+									</p>
+								</div>
 							</div>
 						</SwiperSlide>
 					))}

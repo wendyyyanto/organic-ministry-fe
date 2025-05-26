@@ -9,7 +9,7 @@ export const useSidebar = () => {
 
 	useEffect(() => {
 		animate(
-			".Custom-SideBar-Item",
+			".sidebar-item",
 			{
 				opacity: 1,
 				x: 0

@@ -6,11 +6,11 @@ import Link from "next/link";
 
 function ActivitiesSection() {
 	return (
-		<div className="flex gap-28 px-12">
+		<div className="flex max-xl:flex-col gap-28 px-12">
 			<h1 className="text-primary text-7xl w-80 font-semibold uppercase">
 				Upcoming Activities
 			</h1>
-			<div className="pt-32 w-full">
+			<div className="pt-32 max-xl:pt-0 w-full">
 				<div className="flex flex-col gap-10">
 					{dummySchedule.map((schedule) => (
 						<Fragment key={schedule.id}>

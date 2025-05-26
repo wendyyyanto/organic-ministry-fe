@@ -1,14 +1,73 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+	--breakpoint-3xl: 1900px;
+
+	--font-clash: var(--font-clash);
+	--font-melodrama: var(--font-melodrama);
+
+	--color-primary: #178e96;
+	--color-secondary: #fde3c8;
+	--color-white: #ffffff;
+	--color-black: #111111;
+
+	--margin-8: 2.125rem;
+	--margin-9: 2.375rem;
+
+	--grid-template-columns-medium: repeat(12, 80px);
+	--grid-template-columns-large: repeat(12, 120px);
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		border-color: var(--color-gray-200, currentcolor);
+	}
+
+	html {
+		scrollbar-width: none;
+	}
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	*:focus {
+		outline: none !important;
+		box-shadow: none !important;
+	}
+}
+
+@layer components {
+	.sidebar-item::after {
+		@apply bg-secondary;
+		content: "";
+		width: 0;
+		height: 1px;
+		transition: all 0.15s ease-in-out;
+	}
+
+	.sidebar-item:hover::after {
+		width: 100%;
+	}
+}
 
 body {
 	@apply text-primary bg-white font-melodrama;
 	overflow-x: hidden;
-}
-
-html {
-	scrollbar-width: none;
 }
 
 p {
@@ -19,44 +78,10 @@ h1 {
 	@apply select-none;
 }
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
-*:focus {
-	outline: none !important;
-	box-shadow: none !important;
-}
-
 input {
 	outline: none !important;
 }
 
-.Custom-SideBar-Item {
-	width: auto;
-	display: flex;
-	flex-direction: column;
-	align-items: start;
-}
-
-.Custom-SideBar-Item:hover {
-	cursor: pointer;
-}
-
-.Custom-SideBar-Item::after {
-	@apply bg-secondary;
-	content: "";
-	width: 0;
-	height: 1px;
-	transition: all 0.15s ease-in-out;
-}
-
-.Custom-SideBar-Item:hover::after {
-	width: 100%;
-}
-
 .swiper-pagination-bullet-active {
-	@apply bg-secondary !important	;
+	@apply bg-secondary!;
 }

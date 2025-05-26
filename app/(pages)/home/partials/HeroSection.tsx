@@ -14,7 +14,7 @@ function HeroSection() {
 			<div className="bg-black h-screen w-screen absolute top-0 left-0 -z-10 opacity-75"></div>
 
 			<div className="flex flex-col gap-5 max-w-2xl">
-				<h1 className="text-[174px] max-w-3xl font-bold leading-[162px] text-secondary">
+				<h1 className="text-[174px] max-2xl:text-9xl max-w-3xl font-bold leading-[162px] max-2xl:leading-32 text-secondary">
 					ORGANIC MINISTRY.
 				</h1>
 				<div className="flex flex-col gap-10 text-secondary">
@@ -31,9 +31,9 @@ function HeroSection() {
 					</p>
 					<Link
 						href="/under-construction"
-						className="w-fit flex justify-center items-center font-bold text-2xl text-primary bg-secondary py-4 px-16 gap-11 cursor-pointer"
+						className="w-fit flex justify-center items-center font-bold text-3xl text-primary bg-secondary py-4 px-16 gap-11 cursor-pointer tracking-wider"
 					>
-						OUR SCHEDULES
+						OUR ACTIVITIES
 					</Link>
 				</div>
 			</div>
